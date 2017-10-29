@@ -1,1 +1,61 @@
-{}
+{
+  //http://ember-concurrency.com/#/docs/task-concurrency
+  // ------------------------------
+  // Imports
+  // ------------------------------
+  "Import task from ember-concurrency": {
+		"prefix": "e-c imp task",
+		"body": [
+			"import { task } from 'ember-concurrency';"
+		],
+		"description": "Imports task from ember-concurrency"
+  },
+  // ------------------------------
+  // Tasks
+  // ------------------------------
+  "Create a new ember-concurrency task": {
+    "prefix": "e-c task",
+    "body": [
+      "${1:taskName}: task(function * () {",
+      "\t${2:// yield}",
+      "})${3:,}"
+    ],
+    "description": "Create a new ember-concurrency task"
+  },
+  "Create a new restartable ember-concurrency task": {
+    "prefix": "e-c task restartable",
+    "body": [
+      "${1:taskName}: task(function * () {",
+      "\t${2:// yield}",
+      "}).restartable()${3:,}"
+    ],
+    "description": "Create a new restartable ember-concurrency task"
+  },
+  "Create a new droppable ember-concurrency task": {
+    "prefix": "e-c task drop",
+    "body": [
+      "${1:taskName}: task(function * () {",
+      "\t${2:// yield}",
+      "}).drop()${3:,}"
+    ],
+    "description": "Create a new droppable ember-concurrency task"
+  },
+  "Create a new enqueued ember-concurrency task": {
+    "prefix": "e-c task enqueue",
+    "body": [
+      "${1:taskName}: task(function * () {",
+      "\t${2:// yield}",
+      "}).enqueue()${3:,}"
+    ],
+    "description": "Create a new enqueued ember-concurrency task"
+  },
+  "Create a new keepLatest ember-concurrency task": {
+    "prefix": "e-c task keepLatest",
+    "body": [
+      "${1:taskName}: task(function * () {",
+      "\t${2:// yield}",
+      "}).keepLatest()${3:,}"
+    ],
+    "description": "Create a new keepLatest ember-concurrency task"
+  }
+}
