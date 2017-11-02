@@ -4,11 +4,18 @@
   // Imports
   // ------------------------------
   "Import task from ember-concurrency": {
-		"prefix": "e-c imp task",
+		"prefix": "imp e-c",
 		"body": [
 			"import { task } from 'ember-concurrency';"
 		],
 		"description": "Imports task from ember-concurrency"
+  },
+  "Import timeout from ember-concurrency": {
+		"prefix": "imp e-c timeout",
+		"body": [
+			"import { timeout } from 'ember-concurrency';"
+		],
+		"description": "Imports timeout from ember-concurrency"
   },
   // ------------------------------
   // Tasks
@@ -23,7 +30,7 @@
     "description": "Create a new ember-concurrency task"
   },
   "Create a new restartable ember-concurrency task": {
-    "prefix": "e-c task restartable",
+    "prefix": "e-c task-restartable",
     "body": [
       "${1:taskName}: task(function * () {",
       "\t${2:// yield}",
@@ -32,7 +39,7 @@
     "description": "Create a new restartable ember-concurrency task"
   },
   "Create a new droppable ember-concurrency task": {
-    "prefix": "e-c task drop",
+    "prefix": "e-c task-drop",
     "body": [
       "${1:taskName}: task(function * () {",
       "\t${2:// yield}",
@@ -41,7 +48,7 @@
     "description": "Create a new droppable ember-concurrency task"
   },
   "Create a new enqueued ember-concurrency task": {
-    "prefix": "e-c task enqueue",
+    "prefix": "e-c task-enqueue",
     "body": [
       "${1:taskName}: task(function * () {",
       "\t${2:// yield}",
@@ -50,7 +57,7 @@
     "description": "Create a new enqueued ember-concurrency task"
   },
   "Create a new keepLatest ember-concurrency task": {
-    "prefix": "e-c task keepLatest",
+    "prefix": "e-c task-keepLatest",
     "body": [
       "${1:taskName}: task(function * () {",
       "\t${2:// yield}",
